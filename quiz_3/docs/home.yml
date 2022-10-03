@@ -1,0 +1,11 @@
+tags:
+  - name: Home
+get:
+  description: Menampilkan Pesan It works!
+responses:
+    '200':
+      description: Success
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

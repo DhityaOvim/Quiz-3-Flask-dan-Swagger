@@ -1,0 +1,23 @@
+tags: 
+  - name: Language
+put: 
+  description: Update Language
+parameters:
+    - in: path
+      name : name
+      description: Type the language you want to update
+      required: true
+      type: string
+    - name: name
+      in: body
+      schema: 
+        type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+
+responses:
+  default:
+    description: Added Success!

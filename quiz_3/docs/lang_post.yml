@@ -1,0 +1,32 @@
+tags:
+  - name: Language
+post:
+  description: Type a New Language
+produces:
+- application/json
+parameters:
+  - name: name
+    in: body
+    schema: 
+      type: object
+    required:
+    - name
+    properties:
+      name:
+        type: string
+
+responses:
+    '200':
+      description: Success
+      type: object
+      properties:
+        data: 
+          type: object
+        status: 
+          type: string
+        message:
+          type: object
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error
